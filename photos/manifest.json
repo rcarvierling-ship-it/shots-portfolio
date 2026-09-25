@@ -130,16 +130,6 @@
   "team": "University of Louisville"
  },
  {
-  "id": "fh-06",
-  "sport": "fh",
-  "w": 2255,
-  "h": 1503,
-  "bg": "#628177",
-  "opp": "Northwestern",
-  "date": "2025-09-12",
-  "team": "University of Louisville"
- },
- {
   "id": "fh-07",
   "sport": "fh",
   "w": 2400,
@@ -188,66 +178,6 @@
   "opp": "Clemson",
   "date": "2025-09-19",
   "team": "University of Louisville"
- },
- {
-  "id": "sc-05",
-  "sport": "sc",
-  "w": 6000,
-  "h": 4000,
-  "bg": "#776D63",
-  "opp": "Clemson",
-  "date": "2025-09-19",
-  "team": "University of Louisville"
- },
- {
-  "id": "bb-01",
-  "sport": "bb",
-  "w": 1707,
-  "h": 2560,
-  "bg": "#6C6656",
-  "opp": "BNL",
-  "date": "2025-02-06",
-  "team": "Floyd Central"
- },
- {
-  "id": "bb-02",
-  "sport": "bb",
-  "w": 1707,
-  "h": 2560,
-  "bg": "#7C6D5E",
-  "opp": "BNL",
-  "date": "2025-02-06",
-  "team": "Floyd Central"
- },
- {
-  "id": "bb-03",
-  "sport": "bb",
-  "w": 1707,
-  "h": 2560,
-  "bg": "#5A6A6A",
-  "opp": "Regional",
-  "date": "2025-02-14",
-  "team": "Floyd Central"
- },
- {
-  "id": "bb-04",
-  "sport": "bb",
-  "w": 1707,
-  "h": 2560,
-  "bg": "#86775B",
-  "opp": "Jeff",
-  "date": "2025-02-26",
-  "team": "Floyd Central"
- },
- {
-  "id": "bb-05",
-  "sport": "bb",
-  "w": 1707,
-  "h": 2560,
-  "bg": "#4C5556",
-  "opp": "Regional",
-  "date": "2025-02-14",
-  "team": "Floyd Central"
  },
  {
   "id": "fb-03",

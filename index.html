@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reese Vierling — Sports Photographer</title>
+<meta name="description" content="Sports photography portfolio of Reese Vierling, photo intern with University of Louisville Athletics, prepared for Ball State Athletics. NCAA Division I and high school sports, 2025 season.">
+<link rel="canonical" href="https://portfolio.rcv-media.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reese Vierling — Sports Photographer">
+<meta property="og:description" content="Portfolio for Ball State Athletics. Photo intern, University of Louisville Athletics. 2025 season.">
+<meta property="og:url" content="https://portfolio.rcv-media.com/">
+<meta property="og:image" content="https://portfolio.rcv-media.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/photos/hero-2800.jpg" imagesrcset="/photos/vb-04-1280.jpg 1280w, /photos/hero-2800.jpg 2800w" imagesizes="100vw">
+<style>
+  :root{
+    --bg:#0a0a0b; --panel:#141416; --line:#232327;
+    --ink:#fafafa; --muted:#8c8c94; --accent:#e01b3c;
+    --f:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --gut:clamp(20px,4vw,56px);
+    --max:1440px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.5;
+       -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gut)}
+
+  /* ---------- top bar ---------- */
+  .bar{position:absolute;inset:0 0 auto;z-index:3;padding-block:20px}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .mark i{width:30px;height:30px;border-radius:8px;background:var(--accent);display:grid;
+          place-items:center;font-style:normal;font-size:12px;font-weight:800;letter-spacing:-.02em}
+  .mark b{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .bar .cta{font:600 13px/1 var(--f);color:inherit;background:none;border:0;cursor:pointer;
+            opacity:.85;border-bottom:1px solid rgba(255,255,255,.3);padding:0 0 3px}
+  .bar .cta:hover,.bar .cta:focus-visible{opacity:1;border-color:var(--accent)}
+  .bar .cta[aria-busy="true"]{opacity:.5;cursor:progress}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;height:min(84vh,760px);min-height:480px;overflow:hidden;background:#141416}
+  .hero>img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(10,10,11,.55) 0%,rgba(10,10,11,.06) 30%,rgba(10,10,11,.15) 55%,rgba(10,10,11,.92) 100%)}
+  .heroCopy{position:absolute;inset:auto 0 0;z-index:2;padding-bottom:clamp(34px,6vw,64px)}
+  .heroCopy .kicker{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+                    color:var(--accent);margin-bottom:14px}
+  .heroCopy h1{font-size:clamp(40px,8.4vw,92px);font-weight:800;letter-spacing:-.035em;line-height:.96}
+  .heroCopy h1 span{color:var(--accent)}
+  .heroCopy .lede{margin-top:14px;font-size:clamp(15px,2.1vw,19px);font-weight:500;color:#e6e6e9;max-width:52ch}
+  .heroMeta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:12px;
+            font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .heroMeta span{display:flex;align-items:center;gap:9px}
+  .heroMeta span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+
+  /* ---------- sections ---------- */
+  main{padding-block:clamp(56px,8vw,104px) 0}
+  .sect{margin-bottom:clamp(56px,8vw,104px);scroll-margin-top:24px}
+  .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;
+        flex-wrap:wrap;padding-bottom:18px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+  .head h2{font-size:clamp(24px,3.6vw,38px);font-weight:700;letter-spacing:-.025em;line-height:1}
+  .head .team{margin-top:7px;font-size:12px;font-weight:600;letter-spacing:.14em;
+              text-transform:uppercase;color:var(--accent)}
+  .head .games{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+               color:var(--muted);text-align:right}
+  .row{display:flex;flex-wrap:wrap;gap:clamp(8px,1.1vw,14px);margin-bottom:clamp(8px,1.1vw,14px)}
+  figure{position:relative;margin:0;overflow:hidden;border-radius:4px;cursor:zoom-in;
+         flex:var(--arn,1.5) 1 0;min-width:0;aspect-ratio:var(--ar,3/2);background:#17171a}
+  figure img{width:100%;height:100%;object-fit:cover;opacity:0;
+             transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+  figure img.on{opacity:1}
+  figure:hover img,figure:focus-visible img{transform:scale(1.04)}
+  figure:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  figure figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 11px;
+    font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:#fff;opacity:0;transition:opacity .3s ease;
+    background:linear-gradient(transparent,rgba(0,0,0,.72))}
+  figure:hover figcaption,figure:focus-visible figcaption{opacity:1}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);margin-top:clamp(40px,6vw,72px)}
+  footer .wrap{padding-block:clamp(34px,5vw,54px) clamp(44px,6vw,72px)}
+  .fgrid{display:flex;flex-wrap:wrap;gap:30px 48px;justify-content:space-between;align-items:flex-start}
+  .fgrid h3{font-size:clamp(22px,3vw,32px);font-weight:700;letter-spacing:-.025em;line-height:1.05}
+  .fgrid h3 span{color:var(--muted);display:block;font-size:13px;font-weight:600;
+                 letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+  .fcol{display:flex;flex-direction:column;gap:26px;max-width:52ch}
+  .fmeta{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:14px;line-height:1.5}
+  .fmeta dt{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+            color:var(--accent);padding-top:4px;white-space:nowrap}
+  .fmeta dd{margin:0;color:#cfcfd6}
+  .fmeta dd strong{color:var(--ink);font-weight:700}
+  .flinks{display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:500;align-items:flex-start}
+  .flinks a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:5px;transition:.15s}
+  .flinks a:hover{border-color:var(--accent)}
+  .fine{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);
+        display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+        font-size:12px;color:var(--muted)}
+
+  /* ---------- lightbox ---------- */
+  #lb{position:fixed;inset:0;z-index:50;display:none;background:rgba(6,6,7,.97);
+      align-items:center;justify-content:center;touch-action:pan-y;
+      padding:60px clamp(16px,5vw,80px) 52px}
+  #lb.open{display:flex}
+  #lb figure{background:none;border-radius:0;cursor:default;aspect-ratio:auto;overflow:visible;
+             display:flex;flex-direction:column;align-items:center;gap:14px;
+             max-width:min(1500px,100%);max-height:100%}
+  #lb img{width:auto;height:auto;max-width:100%;max-height:calc(100vh - 160px);
+          object-fit:contain;opacity:1;border-radius:3px}
+  #lb .cap{position:static;text-align:center;font-size:12px;
+           font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+  #lb .num{position:absolute;top:22px;left:0;right:0;text-align:center;font-size:12px;
+           font-weight:700;letter-spacing:.16em;color:var(--muted)}
+  #lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;
+             font-family:var(--f);opacity:.55;transition:opacity .15s}
+  #lb button:hover,#lb button:focus-visible{opacity:1}
+  #lb .x{top:14px;right:18px;font-size:34px;line-height:1;padding:8px}
+  #lb .nav{top:50%;transform:translateY(-50%);font-size:40px;line-height:1;padding:18px 22px}
+  #lb .prev{left:4px} #lb .next{right:4px}
+
+  /* ---------- print ---------- */
+  .printOnly{display:none}
+  @media print{
+    @page{size:letter portrait;margin:.5in}
+    html,body{background:#fff!important;color:#111!important;
+      -webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .bar,.hero,footer,#lb{display:none!important}
+    main{padding:0!important}
+    .wrap{max-width:none!important;padding-inline:0!important;margin:0!important}
+    .printOnly{display:block}
+
+    .cover{break-after:page;text-align:left}
+    .cvHead{display:flex;align-items:center;gap:11px;margin-bottom:.5in}
+    .cvMark{width:34px;height:34px;border-radius:8px;background:var(--accent);color:#fff;
+      display:grid;place-items:center;font-size:13px;font-weight:800}
+    .cvKick{font-size:10pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#555}
+    .cvName{font-size:40pt;font-weight:800;letter-spacing:-.03em;line-height:1}
+    .cvSub{font-size:13pt;font-weight:500;color:#444;margin:.08in 0 .3in}
+    .cvImg{width:100%;height:3.9in;object-fit:cover;border-radius:3px}
+    .cvMeta{margin-top:.38in;display:grid;grid-template-columns:1.15in 1fr;gap:7px 14px;
+      font-size:10.5pt;border-top:1.5px solid #111;padding-top:.2in}
+    .cvMeta dt{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:8.5pt;
+      color:#666;padding-top:2px}
+    .cvMeta dd{margin:0;font-weight:500}
+
+    .sect{break-before:page;margin:0}
+    .head{border-bottom:1.5px solid #111;padding-bottom:.07in;margin-bottom:.18in;
+      display:flex;align-items:flex-end;justify-content:space-between}
+    .head h2{font-size:17pt;color:#111}
+    .head .games{font-size:8.5pt;color:#555;text-align:right}
+
+    .row{display:block!important;margin:0}
+    figure{display:block;break-inside:avoid;page-break-inside:avoid;aspect-ratio:auto;
+      border-radius:0;background:none!important;overflow:visible;flex:none;
+      width:auto;margin:0 auto .22in;cursor:default;text-align:center}
+    figure img{position:static;width:auto;height:auto;max-width:6.2in;max-height:4.15in;
+      aspect-ratio:auto;object-fit:contain;
+      opacity:1!important;transform:none!important;border-radius:2px}
+    figure figcaption{position:static;opacity:1!important;background:none!important;
+      color:#555;padding:5px 0 0;font-size:8pt;letter-spacing:.11em;line-height:1.3}
+  }
+
+  @media (max-width:760px){
+    figure{flex:1 1 100%}
+    .head .games{text-align:left}
+    #lb .nav{display:none}
+    #lb img{max-height:74vh}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    figure img{transition:opacity .2s ease}
+    figure:hover img{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top"><i>RV</i><b>Reese Vierling</b></a>
+    <button class="cta" id="printBtn" type="button">Print portfolio</button>
+  </div>
+</div>
+
+<section class="printOnly cover" aria-hidden="true">
+  <div class="cvHead"><span class="cvMark">RV</span><span class="cvKick">Portfolio &mdash; Ball State Athletics</span></div>
+  <h1 class="cvName">Reese Vierling</h1>
+  <p class="cvSub">Sports photographer &mdash; collegiate athletics, captured in motion.</p>
+  <img class="cvImg" src="/photos/hero-2800.jpg" alt="">
+  <dl class="cvMeta">
+    <dt>Division I</dt><dd>Photo intern, University of Louisville Athletics (2025) &mdash; volleyball, field hockey, women's soccer</dd>
+    <dt>High school</dt><dd>Floyd Central Athletics &mdash; basketball, football (2024&ndash;25)</dd>
+    <dt>Status</dt><dd>Ball State University student &mdash; on campus now and available</dd>
+    <dt>Kit</dt><dd>Sony A7 IV</dd>
+    <dt>Contact</dt><dd>rcar.vierling@gmail.com &middot; (812) 914-1183</dd>
+    <dt>Online</dt><dd>portfolio.rcv-media.com</dd>
+  </dl>
+</section>
+
+<header class="hero" id="top">
+  <img src="/photos/hero-2800.jpg"
+       srcset="/photos/vb-04-1280.jpg 1280w, /photos/vb-04-2000.jpg 2000w, /photos/hero-2800.jpg 2800w"
+       sizes="100vw" alt="Louisville volleyball player rising for a jump serve inside L&amp;N Federal Credit Union Arena" fetchpriority="high">
+  <div class="heroCopy">
+    <div class="wrap">
+      <p class="kicker">Portfolio for Ball State Athletics</p>
+      <h1>Collegiate athletics,<br>captured in motion<span>.</span></h1>
+      <p class="lede">Reese Vierling — sports photographer and 2025 photo intern with University of
+         Louisville Athletics. Division I and high school volleyball, field hockey, soccer,
+         basketball and football. I'm a Ball State student, and I want to shoot for the Cardinals.</p>
+      <div class="heroMeta">
+        <span>Photo intern &mdash; University of Louisville Athletics</span>
+        <span>High school &mdash; Floyd Central Athletics</span>
+        <span>Ball State University student</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="work"></main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <h3><span>Ball State Athletics</span>I'd like to shoot<br>for the Cardinals.</h3>
+      <div class="fcol">
+        <dl class="fmeta">
+          <dt>Experience</dt><dd><strong>Photo intern, University of Louisville Athletics</strong>
+              (2025) &mdash; volleyball, field hockey, women's soccer. Floyd Central Athletics
+              &mdash; basketball and football.</dd>
+          <dt>Status</dt><dd>Ball State University student &mdash; on campus now and available.</dd>
+          <dt>Kit</dt><dd>Sony A7 IV. Comfortable in low-light arenas and under Friday-night lights.</dd>
+        </dl>
+        <div class="flinks">
+          <a href="mailto:rcar.vierling@gmail.com">rcar.vierling@gmail.com</a>
+          <a href="tel:+18129141183">(812) 914-1183</a>
+        </div>
+      </div>
+    </div>
+    <div class="fine">
+      <span>&copy; 2026 Reese Vierling. All rights reserved.</span>
+      <span>Portfolio prepared for Ball State Athletics; not affiliated with or endorsed by Ball State University.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <span class="num"></span>
+  <button class="x" aria-label="Close viewer">&times;</button>
+  <button class="nav prev" aria-label="Previous photo">&#8249;</button>
+  <figure><img alt=""><figcaption class="cap"></figcaption></figure>
+  <button class="nav next" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script>
+const SPORTS = [
+  {key:'vb', name:'Volleyball',   rows:[2,3,3]},
+  {key:'fh', name:'Field Hockey', rows:[2,2,3]},
+  {key:'sc', name:'Soccer',       rows:[2,3]},
+  {key:'bb', name:'Basketball',   rows:[2,3]},
+  {key:'fb', name:'Football',     rows:[2,3]}
+];
+const fmt = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+const src = (id,w) => `/photos/${id}-${w}.jpg`;
+let flat = [];
+
+fetch('/photos/manifest.json').then(r => r.json()).then(data => {
+  const main = document.getElementById('work');
+
+  SPORTS.forEach(sp => {
+    const shots = data.filter(d => d.sport === sp.key);
+    if (!shots.length) return;
+
+    const games = [...new Map(shots.map(s => [s.opp, s.date])).entries()]
+      .sort((a,b) => a[1] < b[1] ? -1 : 1)
+      .map(([opp,date]) => `vs ${opp} &middot; ${fmt(date)}`).join('<br>');
+
+    const sec = document.createElement('section');
+    sec.className = 'sect';
+    const team = shots[0].team || '';
+    sec.innerHTML = `<div class="head"><div><h2>${sp.name}</h2>` +
+                    `<div class="team">${team}</div></div>` +
+                    `<div class="games">${games}</div></div>`;
+
+    let i = 0, r = 0;
+    while (i < shots.length) {
+      const n = sp.rows[Math.min(r, sp.rows.length - 1)];
+      const row = document.createElement('div');
+      row.className = `row n${n}`;
+      shots.slice(i, i + n).forEach(s => {
+        const k = flat.length; flat.push(s);
+        const fig = document.createElement('figure');
+        fig.tabIndex = 0;
+        fig.setAttribute('role','button');
+        fig.setAttribute('aria-label',`Open ${sp.name} photo, ${s.opp}`);
+        fig.style.background = s.bg;
+        fig.style.setProperty('--ar', `${s.w}/${s.h}`);
+        fig.style.setProperty('--arn', (s.w / s.h).toFixed(4));
+        fig.innerHTML =
+          `<img src="${src(s.id,640)}"
+                srcset="${src(s.id,640)} 640w, ${src(s.id,1280)} 1280w, ${src(s.id,2000)} 2000w"
+                sizes="(max-width:760px) 100vw, ${Math.round(90/n)}vw"
+                width="${s.w}" height="${s.h}" loading="lazy" decoding="async"
+                alt="${sp.name} — ${s.team} vs ${s.opp}, photographed by Reese Vierling">
+           <figcaption>${s.team} &middot; vs ${s.opp}</figcaption>`;
+        const img = fig.querySelector('img');
+        const show = () => img.classList.add('on');
+        img.complete ? show() : img.addEventListener('load', show, {once:true});
+        fig.addEventListener('click', () => open(k));
+        fig.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(k); }
+        });
+        row.appendChild(fig);
+      });
+      sec.appendChild(row);
+      i += n; r++;
+    }
+    main.appendChild(sec);
+  });
+});
+
+/* ---- lightbox ---- */
+const lb   = document.getElementById('lb'),
+      lbIm = lb.querySelector('img'),
+      cap  = lb.querySelector('.cap'),
+      num  = lb.querySelector('.num');
+let cur = 0, opener = null;
+
+function label(s){
+  const sp = SPORTS.find(x => x.key === s.sport).name;
+  return `${sp} &middot; ${s.team} vs ${s.opp} &middot; ${fmt(s.date)}`;
+}
+function paint(){
+  const s = flat[cur];
+  lbIm.src = src(s.id, 2000);
+  lbIm.alt = `${SPORTS.find(x => x.key === s.sport).name} — ${s.team} vs ${s.opp}`;
+  cap.innerHTML = label(s);
+  num.textContent = `${cur + 1} / ${flat.length}`;
+  [-1, 1].forEach(d => { const n = flat[(cur + d + flat.length) % flat.length];
+                         if (n) new Image().src = src(n.id, 2000); });
+}
+function open(i){
+  cur = i; opener = document.activeElement;
+  lb.hidden = false; lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  paint(); lb.querySelector('.x').focus();
+}
+function close(){
+  lb.classList.remove('open'); lb.hidden = true;
+  document.body.style.overflow = '';
+  if (opener) opener.focus();
+}
+function move(d){ cur = (cur + d + flat.length) % flat.length; paint(); }
+
+lb.querySelector('.x').onclick    = close;
+lb.querySelector('.prev').onclick = e => { e.stopPropagation(); move(-1); };
+lb.querySelector('.next').onclick = e => { e.stopPropagation(); move(1); };
+lb.addEventListener('click', e => { if (e.target === lb || e.target.tagName === 'FIGURE') close(); });
+document.addEventListener('keydown', e => {
+  if (lb.hidden) return;
+  if (e.key === 'Escape')     close();
+  if (e.key === 'ArrowLeft')  move(-1);
+  if (e.key === 'ArrowRight') move(1);
+});
+let sx = null;
+lb.addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+lb.addEventListener('touchend', e => {
+  if (sx === null) return;
+  const dx = e.changedTouches[0].clientX - sx;
+  if (Math.abs(dx) > 55) move(dx < 0 ? 1 : -1);
+  sx = null;
+}, {passive:true});
+
+/* ---- print: load full-size art, then open the dialog ---- */
+const FULL = 2000;
+function toPrintRes(){
+  return Promise.all([...document.querySelectorAll('main img')].map(im => {
+    if (im.dataset.print) return im.decode().catch(()=>{});
+    im.dataset.print = '1';
+    im.loading = 'eager';
+    im.removeAttribute('srcset'); im.removeAttribute('sizes');
+    im.src = im.src.replace(/-\d+\.jpg$/, `-${FULL}.jpg`);
+    return im.decode().catch(()=>{});
+  }));
+}
+/* after first paint, quietly finish loading the rest so Cmd+P always has art */
+addEventListener('load', () => setTimeout(() => {
+  document.querySelectorAll('main img[loading="lazy"]').forEach(im => im.loading = 'eager');
+}, 2000));
+
+const btn = document.getElementById('printBtn');
+btn.addEventListener('click', async () => {
+  btn.setAttribute('aria-busy','true'); btn.textContent = 'Preparing\u2026';
+  await toPrintRes();
+  btn.removeAttribute('aria-busy'); btn.textContent = 'Print portfolio';
+  window.print();
+});
+window.addEventListener('beforeprint', toPrintRes);
+</script>
+</body>
+</html>
